@@ -1,6 +1,6 @@
 /*導覽列*/
 body{
-    background: url("img/bg.jpg");
+    background: url("bg.jpg");
     font-family: 'Klee One', cursive;
     overflow-x: hidden;
 }
@@ -71,7 +71,7 @@ li a:hover{
 /*景點介紹*/
 .container-introduction{
     height:350px;
-    background-image: url("img/trip.png");
+    background-image: url("trip.png");
     background-size: auto;
     padding:50px;   
     color:black; 
