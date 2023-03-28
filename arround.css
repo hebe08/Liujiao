@@ -1,6 +1,6 @@
 /*導覽列*/
 body{
-    background: url("img/bg.jpg");
+    background: url("bg.jpg");
     font-family: 'Klee One', cursive;
     overflow-x: hidden;
     padding: 0;
@@ -75,7 +75,7 @@ li a:hover{
 /*景點介紹*/
 .container-introduction{
     height:350px;
-    background-image: url("img/other.png");
+    background-image: url("other.png");
     background-size: auto;
     padding:50px;   
     color:black; 
@@ -117,7 +117,7 @@ li a:hover{
 	transition-duration:0.5s;
 }
 .banner-image1{
-    background-image: url(img/故宮.JPG);
+    background-image: url(故宮.JPG);
     height:200px;
     width:100%;
     background-position: center;
@@ -128,7 +128,7 @@ li a:hover{
 }
 
 .banner-image2{
-    background-image: url(img/北港.jpg);
+    background-image: url(北港.jpg);
     height:200px;
     width:100%;
     background-position: center;
@@ -174,7 +174,7 @@ li a:hover{
 
 .container-intro{
     background: rgb(2,0,36);
-    background-image: url(img/bg.jpg);
+    background-image: url(bg.jpg);
 
     padding:20px;   
     color:black; 
