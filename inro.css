@@ -1,6 +1,6 @@
 /*導覽列*/
 body{
-    background: url("img/bg.jpg");
+    background: url("bg.jpg");
     font-family: 'Klee One', cursive;
     overflow-x: hidden;
     padding: 0;
@@ -75,7 +75,7 @@ li a:hover{
 /*景點介紹*/
 .container-introduction{
     height:350px;
-    background-image: url("img/food.png");
+    background-image: url("food.png");
     background-size: cover;
     padding:50px;   
     color:black; 
@@ -118,7 +118,7 @@ li a:hover{
 }
 
 .banner-image1{
-    background-image: url(img/新寶珍-5.JPG);
+    background-image: url(新寶珍-5.JPG);
     height:200px;
     width:100%;
     background-position: center;
@@ -129,7 +129,7 @@ li a:hover{
 }
 
 .banner-image2{
-    background-image: url(img/無名-2.JPG);
+    background-image: url(無名-2.JPG);
     height:200px;
     width:100%;
     background-position: center;
@@ -140,7 +140,7 @@ li a:hover{
 }
 
 .banner-image3{
-    background-image: url(img/巴度窯-1.JPG);
+    background-image: url(巴度窯-1.JPG);
     height:200px;
     width:100%;
     background-position: center;
@@ -151,7 +151,7 @@ li a:hover{
 }
 
 .banner-image4{
-    background-image: url(img/木精靈-2.JPG);
+    background-image: url(木精靈-2.JPG);
     height:200px;
     width:100%;
     background-position: center;
