@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>花絮</title>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--連結 Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="tidbits.css">
+	<!-- 字體 -->
+      <link rel="stylesheet" type="text/css" href="zx.css" />
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); </style>
+</head>
+<script>var ob=["dog","teacher"]</script>
+<body onload="ge(ob)">
+
+    <!--導覽列-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+            <!-- 品牌logo -->
+            <a class="navbar-brand" href="intro.html"><img position="absolute" top="80px" width="150px" height="75px" src="img/logo.png"></a>
+
+            <!-- 第一部份：手機版 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 第二部份：桌上型電腦版 -->
+
+            <div class="collapse navbar-collapse" id="linkbar">
+                <!-- 列出內容 -->
+                <ul class="navbar-nav me-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="intro.html">有關六腳</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="景點介紹.html">景點介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="美食介紹.html">美食介紹</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="schedule.html">旅遊攻略</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="周邊景點介紹.html">周邊景點</a>
+                    </li>
+					<li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="#tidbits">花絮</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+	<br><br id="tidbits">
+
+	<!--影片、照片集1-->
+	<div class="container-intro text-center">
+        <div class="row">
+			<!--我們的相片集-->
+			<div class="col-sm-5">
+                <!-- 投影片架構 -->
+					<div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+						<!-- 圖片投影 元件１-->
+						<div class="carousel-inner">
+
+							<!-- 第一張圖片 active　-->
+							<div class="carousel-item active" data-bs-interval="6000">
+								<img class="slide-pic" src="img/top.JPG" alt="slide1">
+							</div>
+
+							<!-- 第二張圖片 -->
+							<div class="carousel-item " data-bs-interval="6000">
+								<img class="slide-pic" src="img/2.jpg" alt="slide2">
+							</div>
+
+							<!-- 第三張圖片 -->
+							<div class="carousel-item " data-bs-interval="6000">
+								<img class="slide-pic" src="img/3.jpg" alt="slide3">
+							</div>
+
+							<!-- 第四張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/8.jpg" alt="slide4">
+							</div>
+
+							<!-- 第五張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/1.jpg" alt="slide5">
+							</div>
+
+							<!-- 第六張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/5.jpg" alt="slide6">
+							</div>
+
+							<!-- 第七張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/7.jpg" alt="slide7">
+							</div>
+						</div>
+
+						<!-- 左右按鈕　元件２ -->
+						<!-- 左邊按鈕 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+
+						<!-- 右邊按鈕 -->
+						<button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+
+						<!-- 指示按鈕　元件３ -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="4" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="5" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow" data-bs-slide-to="6" >
+
+							</button>
+						</div>
+					</div>
+            </div>
+
+			<!--心得-->
+			<div class="col-sm-7" style="padding-right: 3%;">
+                <div class="container-intro text-center">
+					<div class="row">
+						<div class="col-sm-3">
+							<img class="pic" src="img/繻1.JPG" style="border-radius: 50%;">
+						</div>
+
+						<div class="col-sm-9">
+							<h3 style="text-align: left; margin-left: 3%; text-decoration: underline;">梁方繻</h3><br>
+							<p align="left" style="text-align: left; margin-left: 3%;">以前對六腳的印象只有用久柑仔店，這次透過製作網站去了很多的景點也吃了很多美食，印象最深刻的是去一家蠻有名的考香腸玉米，很期待的去排了十分鐘後發現他烤玉米賣完了那天沒有賣烤香腸，但我超想吃烤香腸QQ</p>
+						</div>
+					</div>
+				</div>
+
+				<br><br><br>
+
+				<div class="container-intro text-center">
+					<div class="row">
+						<div class="col-sm-9">
+							<h3 style="text-align: left; margin-right: 3%; text-decoration: underline;">張素鳳</h3><br>
+							<p align="left" style=" margin-left: 1%;">結合CSS排版跟JS的程式來寫HTML其實還蠻有趣的，但如果想要寫得好的話，勢必要花更多心思來研究，因為網頁程式碼的排版非常重要，不然很容易造成版面大亂，不過每當突破一個階段性的目標之後，就會非常有成就感。</p>
+						</div>
+
+						<div class="col-sm-3">
+							<img class="pic" src="img/鳳1.JPG" style="border-radius: 50%;">
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+        </div>
+    </div>
+
+	<br><br><br>
+
+	<!--影片、照片集2-->
+	<div class="container-intro text-center">
+        <div class="row">
+			<!--心得-->
+			<div class="col-sm-7" style="padding-left: 3%;">
+                <div class="container-intro text-center">
+					<div class="row">
+						<div class="col-sm-9">
+							<h3 style="text-align: left; margin-left: 3%; text-decoration: underline;">彭心蓉</h3><br>
+							<p align="right" style="text-align: left; margin-left: 3%;">因為這次專題，讓我有機會去嘉義縣的六腳村走走。在六腳，我看見了很多熱鬧地區所沒有的景色，和待人親切的民宿老闆和老闆娘。雖然沒有喧囂城市的繁華，但卻能夠以更加放鬆的步調去生活，同時讓我對於鄉田間的日常感到嚮往。</p>
+						</div>
+
+						<div class="col-sm-3">
+							<img class="pic" src="img/彭1.JPG" style="border-radius: 50%;">
+						</div>
+					</div>
+				</div>
+
+				<br><br>
+
+				<div class="container-intro text-center">
+					<div class="row">
+						<div class="col-sm-4">
+							<img class="pic" src="img/臻.JPG" style="border-radius: 50%;">
+						</div>
+
+						<div class="col-sm-8">
+							<h3 style="text-align: left; margin-left: 0%; text-decoration: underline;">洪怡蓁</h3><br>
+							<p align="left" style="text-align: left; margin-left: 0%;">這次因為專題，來了嘉義兩年多難得到遠離嘉義市區的地方玩耍。兩次的旅程中都發生了很多有趣的事，留下許多不錯的回憶。但最大的感受果然還是嘉義好熱，太陽真的沒有在手下留情的，但也感謝好天氣拍到了好看的照片。</p>
+						</div>
+					</div>
+				</div>
+
+			</div>
+
+			<!--我們的相片集-->
+			<div class="col-sm-5">
+                <!-- 投影片架構 -->
+					<div id="slideshow2" class="carousel slide" data-bs-ride="carousel">
+						<!-- 圖片投影 元件１-->
+						<div class="carousel-inner">
+
+							<!-- 第一張圖片 active　-->
+							<div class="carousel-item active" data-bs-interval="6000">
+								<img class="slide-pic" src="img/21.JPG" alt="slide1">
+							</div>
+
+							<!-- 第二張圖片 -->
+							<div class="carousel-item " data-bs-interval="6000">
+								<img class="slide-pic" src="img/11.jpg" alt="slide2">
+							</div>
+
+							<!-- 第三張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/4.jpg" alt="slide3">
+							</div>
+
+							<!-- 第四張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/23.jpg" alt="slide4">
+							</div>
+
+							<!-- 第五張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/13.jpg" alt="slide5">
+							</div>
+
+							<!-- 第六張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/20.jpg" alt="slide6">
+							</div>
+
+							<!-- 第七張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/22.jpg" alt="slide7">
+							</div>
+						</div>
+
+						<!-- 左右按鈕　元件２ -->
+						<!-- 左邊按鈕 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#slideshow2" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+
+						<!-- 右邊按鈕 -->
+						<button class="carousel-control-next" type="button" data-bs-target="#slideshow2" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+
+						<!-- 指示按鈕　元件３ -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="0" class="active">
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="1" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="2" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="3" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="4" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="5" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="6" >
+
+							</button>
+						</div>
+					</div>
+            </div>
+        </div>
+    </div>
+
+	<br><br><br>
+
+	<!--影片、照片集3-->
+	<div class="container-intro text-center">
+        <div class="row">
+			<!--我們的相片集-->
+			<div class="col-sm-5">
+                <!-- 投影片架構 -->
+					<div id="slideshow3" class="carousel slide" data-bs-ride="carousel">
+						<!-- 圖片投影 元件１-->
+						<div class="carousel-inner">
+
+							<!-- 第一張圖片 active　-->
+							<div class="carousel-item active" data-bs-interval="6000">
+								<img class="slide-pic" src="img/10.JPG" alt="slide1">
+							</div>
+
+							<!-- 第二張圖片 -->
+							<div class="carousel-item " data-bs-interval="6000">
+								<img class="slide-pic" src="img/12.jpg" alt="slide2">
+							</div>
+
+							<!-- 第三張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/15.jpg" alt="slide3">
+							</div>
+
+							<!-- 第四張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/16.jpg" alt="slide4">
+							</div>
+
+							<!-- 第五張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/17.jpg" alt="slide5">
+							</div>
+
+							<!-- 第六張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/18.jpg" alt="slide6">
+							</div>
+
+							<!-- 第七張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/19.jpg" alt="slide7">
+							</div>
+
+							<!-- 第八張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/狗1.jpg" alt="slide8">
+							</div>
+
+							<!-- 第九張圖片 -->
+							<div class="carousel-item "data-bs-interval="6000">
+								<img class="slide-pic" src="img/狗2.jpg" alt="slide9">
+							</div>
+
+						</div>
+
+						<!-- 左右按鈕　元件２ -->
+						<!-- 左邊按鈕 -->
+						<button class="carousel-control-prev" type="button" data-bs-target="#slideshow3" data-bs-slide="prev">
+							<span class="carousel-control-prev-icon"></span>
+						</button>
+
+						<!-- 右邊按鈕 -->
+						<button class="carousel-control-next" type="button" data-bs-target="#slideshow3" data-bs-slide="next">
+							<span class="carousel-control-next-icon"></span>
+						</button>
+
+						<!-- 指示按鈕　元件３ -->
+						<div class="carousel-indicators">
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="0" class="active">
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="1" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="2" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="3" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="4" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="5" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="6" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="7" >
+
+							</button>
+
+							<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="8" >
+
+							</button>
+						</div>
+					</div>
+
+
+            </div>
+
+			<!--心得-->
+			<div class="col-sm-7" style="padding-right:3%;">
+                <div class="container-intro text-center">
+					<p><br><br><br></p>
+					<div class="row">
+						<div class="col-sm-3">
+							<img class="pic" src="img/心1.jpg"style="border-radius: 50%;">
+              <img id="fir" src="img/dog.png" width="60" onclick="alchemy(this.id)">
+						</div>
+
+						<div class="col-sm-9">
+							<p><br></p>
+							<h3 style="text-align: left; margin-left: 3%; text-decoration: underline;">吳心平</h3><br>
+							<p align="left" style="text-align: left; margin-left: 3%;">六腳的景致及當地的居民都散發著樸實的氣息，適合喜歡深度旅遊的朋友前去探訪，當地的居民都很熱情的招呼外來的遊客，動不動就會請你吃茶葉蛋，而且當地的狗狗都很給摸摸 (❍ᴥ❍ʋ) !</p>
+						</div>
+					</div>
+				</div>
+
+				<br><br>
+
+
+
+			</div>
+
+        </div>
+    </div>
+
+
+	<br><hr><br>
+
+	<!--影片-->
+	<div class="container-intro text-center">
+        <div class="row">
+			<h3>更多精彩畫面請看↓</h3>
+			<p></p>
+			<div class="col-sm-3">
+
+			</div>
+
+			<div class="col-sm-6">
+                <div class="embed-responsive embed-responsive-16by9">
+					<iframe width="885" height="498" src="https://www.youtube.com/embed/DTA_b2BjEQI" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+				</div>
+			</div>
+
+			<div class="col-sm-3">
+
+			</div>
+		</div>
+	</div>
+	<br>
+<img id="sec" src="img/teacher.png" onclick="alchemy(this.id)">
+
+
+
+
+    <div class="js-back-to-top BackToTop">TOP</div>
+
+    <div class="bag" >
+        <div class="block" id="alpha"  ></div>
+        <div class="block" id="beta" ></div>
+        <div class="block" id="own" ></div>
+        <div class="block" id="gama" onclick="mix()" ></div>
+
+    </div>
+
+</body>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="xdvtQsqx"></script>
+
+<script>
+    $(function(){
+        var $win = $(window);
+        var $BackToTop = $('.js-back-to-top');
+
+        $win.scroll(function(){
+            if($win.scrollTop()>100){
+                $BackToTop.show();
+            }else{
+                $BackToTop.hide();
+            }
+        });
+
+        $BackToTop.click(function(){
+            $('html, body').animate({scrollTop: 0}, 400);
+        });
+    });
+</script>
+<script type="text/javascript" src="forbox.js"></script>
+</html>

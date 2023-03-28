@@ -1,0 +1,206 @@
+/*導覽列*/
+body{
+    background: url("img/bg.jpg");
+    font-family: 'Klee One', cursive;
+    overflow-x: hidden;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+h1{
+    font-size: 55px;
+}
+nav{
+    height:70px;
+}
+
+.navbar{
+    background-color: #c9d8e1;
+    font-family:monospace;
+}
+
+.navbar-brand {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li a {
+	font-weight:bold;
+    color:#324d69 !important;
+    font-size:20px;
+     font-weight: 600;
+}
+li a:hover{
+    color:#f3f3f3 !important;
+    background-color: #638797;
+    
+}
+
+.navbar-toggler{
+    background-color: rgb(246, 246, 246);
+}
+
+.nav-link {
+    padding.top=;
+	font-family:monospace;
+}
+.nav-item{
+    width: 200px;
+    text-align: center;
+}
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link {
+        padding:10px;
+    }
+}
+
+/*景點介紹*/
+.container-introduction{
+    height:350px;
+    background-image: url("img/trip.png");
+    background-size: auto;
+    padding:50px;   
+    color:black; 
+    font-size:50px;
+    font-family: 'Klee One', cursive;
+    box-shadow:0 0 5px 3px rgba(0,0,0,1);
+    background-repeat: no-repeat;
+    color:white;
+    background-size: 100% 100%;
+}
+
+.container-Attractions{
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-content: center;      
+    flex-wrap: wrap;  
+    height:200px;
+    width:650px;
+    opacity: 50;
+    background:rgba(0,0,0,0.6);
+}
+
+/*行程*/
+.cube{
+width: 95px;
+height: 55px;
+border: 1px solid #ffffff;
+background-color: #d2e6d2;
+}
+.use{
+    text-align: center; 
+    background-color: rgba(255, 255, 255, 50%);
+    padding-top: 40px;
+    padding-bottom: 40px;
+    color: rgba(0,0,0,0.5);
+}
+.use:hover{
+    background-color:rgba(255, 255, 255, 70%) ;
+    color: rgba(0,0,0,1);
+    transition-duration: 0.5s;
+}
+span{
+    color: red;
+    opacity: 50%;
+}
+.use:hover span{
+    opacity: 1;
+    transition-duration: 0.5s;
+}
+.box-text{
+width: auto;
+height: 50px;
+display: flex;
+justify-content: center;
+align-items: center;
+color: rgb(42, 99, 53);
+font-weight: 500;
+}
+
+.attr{
+width: auto;
+height: auto;
+border: 0px solid #304c35;
+flex-direction: row;
+display: flex;
+justify-content: center;
+align-items: center;
+flex-wrap: wrap;
+}
+
+.spot{
+width: 100px;
+height: 60px;
+border: 3px solid #b5e6b5;
+}
+
+.time{
+width: 100px;
+height: 60px;
+border: 3px solid #a2dba2;
+background-color: #b5e6b5;
+text-align: center;
+line-height: 66px;
+}
+
+.group{
+flex-direction: row;
+display:  flex;
+justify-content: center;
+position: relative;
+}
+
+.cir{
+position: relative;
+width: 100px;
+height: 50px;
+border-radius: 10%;
+background-color: #a2b4bd;
+text-align: center;
+line-height: 50px;
+margin: 10px;
+color: white;
+flex-direction: row;
+display:  flex;
+align-items: center;
+justify-content: center;
+}
+
+.mid{
+display: flex;
+align-items: center;
+justify-content: center;
+}
+
+.cira{
+position: absolute;
+top: 30px;
+left:auto+30px;
+width:30px;
+height:30px;
+border-radius: 100%;
+background-color:#a2bda2;
+text-align: center;
+line-height: 20px;
+}
+
+#newatt{
+display: flex;
+flex-direction: row;
+}

@@ -1,0 +1,555 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>美食介紹</title>
+    <meta charset="UTF-8">
+    <!-- 響應式網站 -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--連結 Bootstrap-->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <!-- jQuery library -->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <!-- Popper JS -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <!-- Latest compiled JavaScript -->
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+    <script src="https://kit.fontawesome.com/a076d05399.js"></script>
+    <link rel="stylesheet" href="inro.css">
+    <!-- 字體 -->
+    <link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap" rel="stylesheet">
+    <style> @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); </style>
+
+</head>
+
+<body>
+
+    <!--導覽列-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+            <!-- 品牌logo -->
+            <a class="navbar-brand" href="first.html"><img position="absolute" top="80px" width="150px" height="75px" src="img/logo.png"></a>
+
+            <!-- 第一部份：手機版 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 第二部份：桌上型電腦版 -->
+
+            <div class="collapse navbar-collapse" id="linkbar">
+                <!-- 列出內容 -->
+                <ul class="navbar-nav navbar-right">
+                    <li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="intro.html">有關六腳</a>
+                    </li>
+                    <li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="景點介紹.html">景點介紹</a>
+                    </li>
+                    <li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="#foodintro">美食介紹</a>
+                    </li>
+                    <li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="schedule.html">旅遊攻略</a>
+                    </li>
+                    <li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="周邊景點介紹.html">周邊景點</a>
+                    </li>
+					<li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="花絮.html">花絮</a>
+                    </li>
+                </ul>
+                <!-- 列出到右邊 -->
+                
+            </div>                        
+        </div>
+    </nav>
+
+    <!--景點介紹-->
+    <div class="container-introduction" id="foodintro">
+        <div style="display: flex;justify-content: center;align-content: center; padding-top: 50px;">
+            <h1 class="container-Attractions">Tasty</h1>
+        </div>
+    </div>
+	<br><br>
+    <!--景點介紹卡片-->
+    <div class="container-card text-center">
+        <div class="row" style="padding-left: 25px;padding-right: 25px;">
+            <!-- 第一個卡片 -->
+            <div class="col-sm-3">
+                <div class="card" id="column1">
+                    <div class="banner-image1"></div>
+                    <div class="card-body">
+                        <a href="#box1" class="btn btn-primary">新寶珍餅舖</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第二個卡片 -->
+            <div class="col-sm-3">
+                <div class="card" id="column2">
+                    <div class="banner-image2"></div>
+                    <div class="card-body">
+                        <a href="#box2" class="btn btn-primary">無名大腸包小腸</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第三個卡片 -->
+            <div class="col-sm-3">
+                <div class="card" id="column3">
+                    <div class="banner-image3"></div>
+                    <div class="card-body">
+                        <a href="#box3" class="btn btn-primary">巴度窯</a>
+                    </div>
+                </div>
+            </div>
+            <!-- 第四個卡片 -->
+            <div class="col-sm-3">
+                <div class="card" id="column4">
+                    <div class="banner-image4"></div>
+                    <div class="card-body">
+                        <a href="#box4" class="btn btn-primary">木精靈豆花</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+	<br><br>
+
+    <div class="big-container">
+        <div class="container1"  id="box1" style="display: none;">
+            <!--新寶珍-->
+            <div class="container-intro text-center">
+                <div class="row">
+                    <p><hr></p>
+                    <div class="col-sm-5"  id="factory">
+                        <br><br><br><br><br>
+                        <!-- 投影片架構 -->
+						<div id="slideshow" class="carousel slide" data-bs-ride="carousel">
+							<!-- 圖片投影 元件１-->
+							<div class="carousel-inner">
+							<!-- 第一張圖片 active　-->
+								<div class="carousel-item active">
+									<img class="slide-pic" src="img/新寶珍-1.jpg" alt="slide1">
+								</div>
+							<!-- 第二張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/新寶珍-2.jpg" alt="slide2">
+								</div>
+
+							<!-- 第三張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/新寶珍-5.jpg" alt="slide3">
+								</div>
+				
+							<!-- 第四張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/新寶珍-6.jpg" alt="slide4">
+								</div>
+							</div>
+
+							<!-- 左右按鈕　元件２ -->
+							<!-- 左邊按鈕 -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#slideshow" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<!-- 右邊按鈕 -->
+							<button class="carousel-control-next" type="button" data-bs-target="#slideshow" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+
+							<!-- 指示按鈕　元件３ -->
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#slideshow" data-bs-slide-to="0" class="active">
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow" data-bs-slide-to="1" >
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow" data-bs-slide-to="2" >
+
+								</button>
+				
+								<button type="button" data-bs-target="#slideshow" data-bs-slide-to="3" >
+
+								</button>
+							</div>
+						</div>
+                    </div>
+
+                    <div class="col-sm-7" style="padding-right: 5%;">
+                        <br><br>
+                       <h2 align="left" style="text-decoration: underline;">新寶珍餅舖</h2>
+                       <p><br></p>
+                       <p align="left" >新寶珍餅舖創立於西元1950 年，在新寶珍餅舖第三代王春正的記憶中，餅店原本只有生產傳統大餅，而蒜頭村會開始發展出蒜頭餅，原先的用意是為了方便農民攜帶下田，而開發出這款適合果腹解飢的乾糧，漸成為在地特有滋味。而第四代王鼎中的記憶裡，早年糕餅舖並沒有正式掛招牌，烤好的蒜頭餅都是一袋一袋批發賣給雜貨店，自家的蒜頭餅出現在各庄頭的雜貨店內，久而久之那滋味漸漸深植在地，成了一代人熟悉的家鄉味。到了工商社會，農村人口大量外移，出外打拼的遊子要是返鄉，必會特意來買蒜頭餅當伴手禮，久之這餅在當地人口中也有「回鄉餅」的貼切綽號。</p>
+                       <p align="left" ><br>時至今日，蒜頭餅仍然使用台灣蒜頭為原料，而蒜頭餅也仍保持著特殊的形狀。王鼎中表示，蒜頭餅的擀揉功夫在於酥皮包入蒜香糖餡之後，得捏成圓球、擀平、對折，烤完餅皮膨起，就成現下常見的迷你「刈包」造型。而內餡的美味秘密，老闆王春正說秘訣在於蒜香糖餡裡頭不摻一滴水，直接用蒜泥的汁水來調和麵粉與麥芽糖，水份在烤焙高溫下揮發，蒜香糖餡的嗆辣轉為柔和，滲出回甘的甜味，是蒜頭餅令人一吃再吃，並榮獲全國「金牌獎」之最高榮譽的原因。</p>
+                       <p align="left" ><br>老餅舖不只念舊，也懂得創新。由王春正改良的3Q餅，比起一般只使用紅豆沙與麻糬，還多了花生內餡、芝麻內餡、香酥肉鬆來提味，一口咬下有多種滋味在口中跳躍，有趣的食感也榮獲2014年經濟部一縣市一幸福點心競賽第一名，亦是鄉人大推的伴手禮。</p>
+                    </div>
+                </div>
+				<br><br>
+               <!--連結、留言區、地圖-->
+                <div class="row" style="background-color: rgb(221, 228, 246);">
+                    <!--連結-->
+                    <p><br></p>
+                    <div class="col-sm-3">
+                        <!--官網-->
+                        <a href="http://www.shinbaojen.com.tw/" target="_blank">
+                            <img src="http://www.shinbaojen.com.tw/ec99/eshop1011/img/LOGO.png" width="80" height="80" style="border:0;margin: 3%;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></img>
+                        </a>
+                        <!--臉書-->
+                        <a href="https://www.facebook.com/shinbaojen/" target="_blank" style="border:5px transparent solid;margin: 3%;">
+                            <img src="https://archeen.com.tw/wp-content/uploads/fb_icon_325x325.png" width="80" height="80" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></img>
+                        </a>
+                        <!--哀居 
+                        <a href="http://www.shinbaojen.com.tw/" target="_blank" style="border:5px transparent solid;">
+                            <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/a/a5/Instagram_icon.png/2048px-Instagram_icon.png" width="100" height="100" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></img>
+                        </a> -->
+                    </div>
+                    <!--留言區-->
+                    <div class="col-sm-4">
+                        <div class="fb-comments" id="po" data-href="http://127.0.0.1/美食介紹.html" data-width="350" data-numposts="5"></div>
+                    </div>
+                    <!--地圖-->
+                    <div class="col-sm-5">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1026.8029748436559!2d120.29139723029115!3d23.49255553122861!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9971549aba4f%3A0x3d3dfaf4ab60b537!2z5paw5a-254-N6JKc6aCt6aSF!5e0!3m2!1szh-TW!2stw!4v1673093483085!5m2!1szh-TW!2stw" width="500" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!--地圖的邊框 看起來很奇怪 就先移開了
+                        style="border:10px solid lightblue;border-radius: 1%;"-->
+                    </div>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container2"  id="box2" style="display: none;">
+            <!--無名-->
+            <div class="container-intro text-center">
+                <div class="row">
+                    <p><hr></p>
+                    <div class="col-sm-5"  id="factory">
+                        <br><br><br><br>
+                        <!-- 投影片架構 -->
+						<div id="slideshow2" class="carousel slide" data-bs-ride="carousel">
+							<!-- 圖片投影 元件１-->
+							<div class="carousel-inner">
+							<!-- 第一張圖片 active　-->
+								<div class="carousel-item active">
+									<img class="slide-pic" src="img/無名-2.jpg" alt="slide1">
+								</div>
+							<!-- 第二張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/無名-3.jpg" alt="slide2">
+								</div>
+
+							<!-- 第三張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/無名-4.jpg" alt="slide3">
+								</div>
+
+							<!-- 左右按鈕　元件２ -->
+							<!-- 左邊按鈕 -->
+							<button class="carousel-control-prev arrow" type="button" data-bs-target="#slideshow2" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<!-- 右邊按鈕 -->
+							<button class="carousel-control-next arrow" type="button" data-bs-target="#slideshow2" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+
+							<!-- 指示按鈕　元件３ -->
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="0" class="active">
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="1" >
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow2" data-bs-slide-to="2" >
+
+								</button>
+							</div>
+						</div>
+                    </div>
+				</div>
+
+                    <div class="col-sm-7" style="padding-right: 5%;">
+						<br><br>
+                       <h2 align="left" style="text-decoration: underline;">無名大腸包小腸</h2>
+                       <p><br></p>
+                       <p align="left">無名大腸加香腸是六腳開業20年的著名小吃攤。店家僅賣烤香腸、大腸包小腸，單一品項就成功擄獲了許多人的心，更登上了一些平面雜誌的介紹。不僅成為到六腳旅遊的觀光客慕名來吃，當地人更是會加入排隊行列，只要有開店就會來買上一份回家品嚐，尤其是剛開門沒多就可說是尖峰時段，那人潮絡繹不絕。</p>
+                       <p align="left"><br>無名大腸加香腸特製的香腸使用台灣豬肉、五香及肉桂調配，一口吃下馬上爆汁，而且比例瘦肉居多，不喜吃肥肉的肯定會愛這裡的大腸包小腸。而米腸則是以糯米、花生和肉燥灌成，搭配自己醃製的薑和大蒜，單吃也很好吃！建議買來要馬上趁熱吃，才能吃得到現烤的美味及香腸爆汁的快感。</p>
+                       <p align="left"><br>六腳市區的無名大腸加香腸每日下午13：30開始營業，而且只賣到五點半，通常還沒開門就看到不少人在排隊，而無名大腸加香腸同一個攤位早上則是賣早餐。</p>
+                    </div>
+                </div>
+				<br><br>
+               <!--連結、留言區、地圖-->
+                <div class="row" style="background-color: rgb(221, 228, 246);">
+                    <!--留言區-->
+                    <p><br></p>
+                    <div class="col-sm-6">
+                        <div class="fb-comments" id="po" data-href="http://127.0.0.1/美食介紹.html" data-width="550" data-numposts="5"></div>
+                    </div>
+                    <!--地圖-->
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1012.0629235494173!2d120.291752671623!3d23.49501850488434!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e99740633ee13%3A0x381c58485c4024dc!2zMzDlubTogIHlupcg5aSn6IW45Yqg6aaZ6IW4!5e0!3m2!1szh-TW!2stw!4v1673160885939!5m2!1szh-TW!2stw" width="600" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!--地圖的邊框 看起來很奇怪 就先移開了
+                        style="border:10px solid lightblue;border-radius: 1%;"-->
+                    </div>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container3"  id="box3" style="display: none;">
+            <!--巴度窯-->
+            <div class="container-intro text-center">
+                <div class="row">
+                    <hr>
+                    <div class="col-sm-5"  id="factory">
+                        <br><br><br><br>
+                        <!-- 投影片架構 -->
+						<div id="slideshow3" class="carousel slide" data-bs-ride="carousel">
+							<!-- 圖片投影 元件１-->
+							<div class="carousel-inner">
+							<!-- 第一張圖片 active　-->
+								<div class="carousel-item active">
+									<img class="slide-pic" src="img/巴度窯-4.jpg" alt="slide1">
+								</div>
+							<!-- 第二張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/巴度窯-5.jpg" alt="slide2">
+								</div>
+
+							<!-- 第三張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/巴度窯-6.jpg" alt="slide3">
+								</div>
+								
+							<!-- 第四張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/巴度窯-7.jpg" alt="slide4">
+								</div>
+								
+							<!-- 左右按鈕　元件２ -->
+							<!-- 左邊按鈕 -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#slideshow3" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<!-- 右邊按鈕 -->
+							<button class="carousel-control-next" type="button" data-bs-target="#slideshow3" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+
+							<!-- 指示按鈕　元件３ -->
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="0" class="active">
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="1" >
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="2" >
+
+								</button>
+								
+								<button type="button" data-bs-target="#slideshow3" data-bs-slide-to="3" >
+
+								</button>
+							</div>
+							</div>
+						</div>
+                    </div>
+
+                    <div class="col-sm-7" style="padding-right: 5%;">
+						<br><br>
+                       <h2 align="left" style="text-decoration: underline;">巴度窯</h2>
+                       <p><br></p>
+                       <p align="left">巴度窯是一家窯烤Pizza店，是間當地居民推薦給我們的餐廳，除店內鐵皮搭建的用餐空間，餐廳外也有窯燒爐的裝置。這間店距離魚寮遺址約莫10多分的車程，隱身在田野之中，除了基本的窯烤Pizza，也有窯烤麵包。</p>
+                       <p align="left"><br>其中，披薩的大小大約是9吋，比較偏向薄餅，不過又沒有薄餅這麼薄，是帶有些許厚度。口味的部分包含基本和特殊口味，其中，特殊口味有鹹蛋超人、泡菜鴨肉等等，另外假日有限量的披薩，例如:「鮮蚵」、「香蕉核桃」。</p>
+                       <p align="left"><br>巴度窯所窯烤的披薩，採用一般業者少用的龍眼木，詢問原因後得知，因這附近大多數村民皆種植龍眼取得較為容易，且除了收購外甚至靠自己砍伐自己切割來降低成本，一架獨特的油壓式劈柴機器來自於自己的構想，相對省去了不少財力與人力成本。</p>
+                    </div>
+                </div>
+				<br><br>
+               <!--連結、留言區、地圖-->
+                <div class="row" style="background-color: rgb(221, 228, 246);">
+                    <!--連結-->
+                    <p><br></p>
+                    <div class="col-sm-1">
+                        <!--臉書-->
+                        <a href="https://www.facebook.com/baduyao/" target="_blank" style="border:5px transparent solid;">
+                            <img src="https://archeen.com.tw/wp-content/uploads/fb_icon_325x325.png" width="90" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></img>
+                        </a>
+                    </div>
+                    <!--留言區-->
+                    <div class="col-sm-5">
+                        <div class="fb-comments" id="po" data-href="http://127.0.0.1/美食介紹.html" data-width="450" data-numposts="5"></div>
+                    </div>
+                    <!--地圖-->
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3659.3115573738837!2d120.29210111365842!3d23.485285004771935!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x0%3A0xfa250cbec4b9f5eb!2z5be05bqm56qv!5e0!3m2!1szh-TW!2stw!4v1673162759199!5m2!1szh-TW!2stw" width="600" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!--地圖的邊框 看起來很奇怪 就先移開了
+                        style="border:10px solid lightblue;border-radius: 1%;"-->
+                    </div>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+
+        <div class="container4"  id="box4" style="display: none;">
+            <!--木精靈-->
+            <div class="container-intro text-center">
+                <div class="row">
+                    <p><hr></p>
+                    <div class="col-sm-5"  id="factory">
+                        <br><br><br>
+                        <!-- 投影片架構 -->
+						<div id="slideshow4" class="carousel slide" data-bs-ride="carousel">
+							<!-- 圖片投影 元件１-->
+							<div class="carousel-inner">
+							<!-- 第一張圖片 active　-->
+								<div class="carousel-item active">
+									<img class="slide-pic" src="img/木精靈-1.jpg" alt="slide1">
+								</div>
+							<!-- 第二張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/木精靈-2.jpg" alt="slide2">
+								</div>
+
+							<!-- 第三張圖片 -->
+								<div class="carousel-item ">
+									<img class="slide-pic" src="img/木精靈-4.jpg" alt="slide3">
+								</div>
+								
+							<!-- 左右按鈕　元件２ -->
+							<!-- 左邊按鈕 -->
+							<button class="carousel-control-prev" type="button" data-bs-target="#slideshow4" data-bs-slide="prev">
+								<span class="carousel-control-prev-icon"></span>
+							</button>
+							<!-- 右邊按鈕 -->
+							<button class="carousel-control-next" type="button" data-bs-target="#slideshow4" data-bs-slide="next">
+								<span class="carousel-control-next-icon"></span>
+							</button>
+
+							<!-- 指示按鈕　元件３ -->
+							<div class="carousel-indicators">
+								<button type="button" data-bs-target="#slideshow4" data-bs-slide-to="0" class="active">
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow4" data-bs-slide-to="1" >
+
+								</button>
+
+								<button type="button" data-bs-target="#slideshow4" data-bs-slide-to="2" >
+
+								</button>
+							</div>
+							</div>
+						</div>
+                    </div>
+
+                    <div class="col-sm-7" style="padding-right: 5%;">
+						<br>
+                       <h2 align="left" style="text-decoration: underline;">木精靈</h2>
+                       <p><br></p>
+                       <p align="left">木精靈傳統豆花位於嘉義縣六腳鄉蒜東村271-1號，屋主黃樹青先生五十年前在一間竹管厝裡經營冰果室，由於位處六通要道，凡是往來嘉義、朴子的人車皆須由屋前的橋樑通行，後來橋齡以久，另蓋新橋橫跨朴子溪，客流量瞬間驟減。</p>
+                       <p align="left"><br>屋主的兩位兒子為保留傳統及發展地方特色，一位繼承了古早味豆花，豆花的基底可以選擇要黑糖水或是豆漿，白皙的豆花口感平滑水嫩，加上簡單配料，就成為好吃的古早味甜品；另一位則將歷年來參加全國創意偶戲比賽的特優作品展示屋內，期許懸絲偶文化能在此落地生根，成為地方特色，因此店內擺置許多半百年來所保留的器物，希望能讓年輕一輩感受古老懷舊風。</p>
+                       <p align="left"><br>懸絲偶戲，又稱嘉禮戲，是中國起源最早的劇種，在2500多年前就有了，目前以大陸泉州較完整，台灣只有少數團體用在敬神祭煞儀式上。</p>
+                    </div>
+                </div>
+				<br><br>
+               <!--連結、留言區、地圖-->
+                <div class="row" style="background-color: rgb(221, 228, 246);">
+                    <!--連結-->
+                    <p><br></p>
+                    <div class="col-sm-1">
+                        <!--臉書-->
+                        <a href="https://m.facebook.com/profile.php?id=142002995872442" target="_blank" style="border:5px transparent solid;">
+                            <img src="https://archeen.com.tw/wp-content/uploads/fb_icon_325x325.png" width="90" height="90" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></img>
+                        </a>
+                    </div>
+                    <!--留言區-->
+                    <div class="col-sm-5">
+                        <div class="fb-comments" id="po" data-href="http://127.0.0.1/美食介紹.html" data-width="450" data-numposts="5"></div>
+                    </div>
+                    <!--地圖-->
+                    <div class="col-sm-6">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d5808.762310808238!2d120.29190063668185!3d23.486023785686204!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x346e9979b455133f%3A0x6a9b77f9e1d84e0!2z6JKc6aCtIOacqOeyvumciuWCs-e1seixhuiKsS_nsonlnJM!5e0!3m2!1szh-TW!2stw!4v1673162668712!5m2!1szh-TW!2stw" width="600" height="250"  allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <!--地圖的邊框 看起來很奇怪 就先移開了
+                        style="border:10px solid lightblue;border-radius: 1%;"-->
+                    </div>
+                    <p><br></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="js-back-to-top BackToTop">TOP</div>
+</body>
+
+<script async defer crossorigin="anonymous" src="https://connect.facebook.net/zh_TW/sdk.js#xfbml=1&version=v15.0" nonce="xdvtQsqx"></script>
+
+<script>
+    $(function(){
+        var $win = $(window);
+        var $BackToTop = $('.js-back-to-top');
+
+        $win.scroll(function(){
+            if($win.scrollTop()>100){
+                $BackToTop.show();
+            }else{
+                $BackToTop.hide();
+            }
+        });
+
+        $BackToTop.click(function(){
+            $('html, body').animate({scrollTop: 0}, 400);
+        });
+    });
+
+    var column1 = document.getElementById('column1');
+    var column2 = document.getElementById('column2');
+    var column3 = document.getElementById('column3');
+    var column4 = document.getElementById('column4');
+
+    var box1 = document.getElementById('box1');
+    var box2 = document.getElementById('box2');
+    var box3 = document.getElementById('box3');
+    var box4 = document.getElementById('box4');
+
+    var columns = [column1,column2,column3,column4];
+    var boxs = [box1,box2,box3,box4];
+
+    columns.forEach(column=>column.addEventListener('click',function(){
+        for(var index=0;index<4;index++){
+            boxs[index].style.display = 'none';
+        }
+        switch (column) {
+        case column1:
+            boxs[0].style.display = 'block';
+            break;
+        case column2:
+            boxs[1].style.display = 'block';
+            break;
+        case column3:
+            boxs[2].style.display = 'block';
+            break;
+        case column4:
+            boxs[3].style.display = 'block';
+            break;
+        default:
+            break;
+        }
+    }));
+</script>
+
+</html>

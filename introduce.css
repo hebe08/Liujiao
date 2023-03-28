@@ -1,0 +1,259 @@
+/*導覽列*/
+body{
+    background: url("img/bg.jpg");
+    font-family: 'Klee One', cursive;
+    overflow-x: hidden;
+}
+p{
+    font-size: 18px;
+    line-height: 28px;
+}
+h1{
+    font-size: 55px;
+}
+nav{
+    height:70px;
+}
+
+.navbar{
+    background-color: #c9d8e1;
+    font-family:monospace;
+}
+
+.navbar-brand {
+    display: flex;
+    padding-top: 15px;
+    padding-bottom: 0.3125rem;
+    margin-right: 1rem;
+    font-size: 1.25rem;
+    line-height: inherit;
+    white-space: nowrap;
+    align-items: center;
+    justify-content: center;
+    align-content: center;
+    flex-wrap: wrap;
+    flex-direction: row;
+}
+
+li a {
+	font-weight:bold;
+    color:#324d69 !important;
+    font-size:20px;
+   
+}
+li a:hover{
+    color:#f3f3f3 !important;
+    background-color: #638797;
+    
+}
+
+.navbar-toggler{
+    background-color: rgb(246, 246, 246);
+}
+
+.nav-link {
+    padding:20px;
+	font-family:monospace;
+}
+.nav-item{
+    width: 200px;
+    text-align: center;
+}
+@media (max-width:600px){
+    nav{
+        height:auto;
+    }
+    .nav-link {
+        padding:10px;
+    }
+}
+
+/*景點介紹*/
+.container-introduction{
+    height:350px;
+    background-image: url("img/road.png");
+    background-size: auto;
+    padding:50px;   
+    color:black; 
+    font-size:20px;
+    box-shadow:0 0 5px 3px rgba(0,0,0,1);
+    background-repeat: no-repeat;
+    color:white;
+    font-size:30;
+    background-size: 100% 100%;
+}
+.container-intro{
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-content: center;      
+    flex-wrap: wrap;  
+    height:200px;
+    width:650px;
+    opacity: 50;
+    background:rgba(0,0,0,0.6);
+}
+.fb{
+    width: 13%;
+    height: 20%;
+    background-image: url(img/facebook.png);
+    background-size: cover;
+}
+/*RWD*/
+@media (max-width:600px){
+    .container-intro{
+        background-image: url("img/road.png");
+        height:200px;
+        width:100%;
+        background-size: auto;	
+        color:black; 
+        font-size:20px;
+        box-shadow:0 0 5px 3px rgba(0,0,0,1);
+        background-repeat: no-repeat;
+        color:white;
+        font-size:30;
+        background-size: 100% 100%;
+    }
+}
+
+/*景點介紹欄位*/
+.card{
+    background-color: beige;
+    height:250px;
+	width:350px;
+	border-radius: 0 0 30% 30%;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+	opacity:0.5;
+}
+.card:hover{
+	opacity:1;
+	transform: scale(1.15,1.15);
+	transition-duration:0.5s;
+}
+
+.banner-image1{
+    
+    background-image: url(img/六腳.JPG);
+    height:200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.banner-image2{
+    
+    background-image: url(img/history.jpg);
+    height:200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.banner-image3{
+    
+    background-image: url(https://i.epochtimes.com/assets/uploads/2019/05/1905210337521487-450x281.jpg);
+    height:200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+    opacity: 80%;
+}
+
+.banner-image4{
+    
+    background-image: url(img/more.JPG);
+    height:200px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+    border-top-left-radius: 20%;
+    border-top-right-radius: 20%;
+}
+
+.btn{
+    width:100%;
+    border:none;
+    font-size:20px;
+    font-weight: 700;
+    color:white;
+    background-color:rgb(102, 118, 139);
+    padding:20px;
+    border-bottom-left-radius: 20%;
+    border-bottom-right-radius: 20%;
+    /* 移到下方 */
+    position:absolute;
+    bottom:0;
+    left:0;
+}
+
+/*各個景點介紹*/
+.container-viewintro{
+    
+    background: rgb(2,0,36);
+    background-image: url(img/bg.jpg);
+    
+    padding:5%;   
+    color:black; 
+    font-size:20px;   
+    
+}
+.pic{	
+    display: flex;
+    /* 水平置中 */
+    justify-content: center;    
+    /* 垂直置中 */
+    align-content: center; 
+    height:400px;
+    width:100%;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+}
+/*RWD*/
+@media (max-width:600px){
+    .pic{	
+        height:350px;
+        width:100%;
+    }
+}
+.BackToTop{
+    width:60px;
+    height:60px;
+
+
+    position: fixed;
+    bottom: 20px;
+    right: 30px;
+
+    z-index: 1001;
+    background:#fff;
+    border:5px solid skyblue;
+    outline: none;
+    color: skyblue;
+    cursor: pointer;
+
+    text-align: center;
+    line-height: 50px;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 2px;
+    border-radius: 10px;
+
+    transition: .5s;
+}
+.BackToTop:hover{
+    background:skyblue ;
+    color: #fff;
+}

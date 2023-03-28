@@ -1,0 +1,86 @@
+.bag{
+  position: fixed;
+  width: 60px;
+  height: 60px;
+  top: 550px;
+  left: 1428px;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 1005;
+  background-color: #f7c76d;
+}
+.bag:hover{
+  top: 460px;
+  left: 1208px;
+  width: 280px;
+  height: 150px;
+  border-radius: 10px 10px 10px 10px;
+  z-index: 1005;
+  background-color: #ffee96;
+}
+.bag:hover #alpha{
+  display: block;
+  z-index: 1005;
+}
+.bag:hover #beta{
+  display: block;
+  z-index: 1005;
+}
+.bag:hover #gama{
+  display: block;
+  z-index: 1005;
+}
+.bag:hover #asd{
+  display:block;
+}
+
+#alpha{
+  position: fixed;
+  width: 60px;
+  height: 85px;
+  background-color: #34a0b6;
+  top:515px;
+  left: 1238px;
+  z-index: 1005;
+  display: none;
+}
+
+#beta{
+  position: fixed;
+  width: 60px;
+  height: 85px;
+  background-color: #34a0b6;
+  top:515px;
+  left:1318px;
+  z-index: 1005;
+  display: none;
+}
+
+#gama{
+  position: fixed;
+  width: 60px;
+  height: 85px;
+  background-color: #34a0b6;
+  top:515px;
+  left:1398px;
+  z-index: 1005;
+  display: none;
+}
+#fir{
+  width: 60px;
+  height: auto;
+}
+#sec{
+  width: 60px;
+  height: auto;
+}
+#thi{
+  width: 60px;
+  height: auto;
+}
+#fir{
+  width: 60px;
+  height: auto;
+}
+#asd{
+  display:none;
+}

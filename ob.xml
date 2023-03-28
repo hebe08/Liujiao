@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<CATALOG>
+  <OB name="fir" type="img">
+    <ATTR name="src" val="img/dog.png"></ATTR>
+    <ATTR name="id" val="fir"></ATTR>
+    <ATTR name="width" val='50px'></ATTR>
+    <ATTR name="height" val='auto'></ATTR>
+    <ATTR name="onclick" val="alchemy(this.id)"></ATTR>
+  </OB>
+  <OB name="sec" type="img">
+    <ATTR name="src" val="img/teacher.png"></ATTR>
+    <ATTR name="id" val="sec"></ATTR>
+    <ATTR name="width" val='50px'></ATTR>
+    <ATTR name="height" val='auto'></ATTR>
+    <ATTR name="onclick" val="alchemy(this.id)"></ATTR>
+  </OB>
+  <OB name="thi" type="img">
+    <ATTR name="src" val="src/3.jpg"></ATTR>
+    <ATTR name="id" val="thi"></ATTR>
+    <ATTR name="width" val='50px'></ATTR>
+    <ATTR name="height" val='auto'></ATTR>
+    <ATTR name="onclick" val="alchemy(this.id)"></ATTR>
+  </OB>
+  <OB name="fou" type="img">
+    <ATTR name="src" val="src/4.jpg"></ATTR>
+    <ATTR name="id" val="fou"></ATTR>
+    <ATTR name="width" val='50px'></ATTR>
+    <ATTR name="height" val='auto'></ATTR>
+    <ATTR name="onclick" val="alchemy(this.id)"></ATTR>
+  </OB>
+</CATALOG>

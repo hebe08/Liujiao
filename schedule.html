@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>  
+	<title>旅遊攻略</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<meta http-equiv="X-UA-Compatible" content="ie=edge">
+	<link rel="stylesheet" type="text/css" href="schedulestyle.css" />
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jspdf/2.5.1/jspdf.umd.min.js"></script>
+	
+	<!-- 響應式網站 -->
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<!--連結 Bootstrap-->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-F3w7mX95PdgyTmZZMECAngseQB83DfGTowi0iMjiWaeVhAn4FJkqJByhZMI3AhiU" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.1/dist/js/bootstrap.bundle.min.js" integrity="sha384-/bQdsTh/da6pkI1MST/rWKFNjaCP5gBSY4sEBT38Q/9RBh9AH40zEOg7Hlq2THRZ" crossorigin="anonymous"></script>
+	<!-- Latest compiled and minified CSS -->
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<!-- jQuery library -->
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<!-- Popper JS -->
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<!-- Latest compiled JavaScript -->
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script> 
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://kit.fontawesome.com/a076d05399.js"></script>
+	<!-- 字體 -->
+	<link href="https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap" rel="stylesheet">
+	<style> @import url('https://fonts.googleapis.com/css2?family=Klee+One:wght@600&display=swap'); </style>
+</head>
+
+<body onload="time()">
+	<!--導覽列-->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+        <div class="container-fluid">
+            <!-- 品牌logo -->
+            <a class="navbar-brand" href="first.html"><img position="absolute" top="80px" width="150px" height="75px" src="img/logo.png"></a>
+
+            <!-- 第一部份：手機版 -->
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#linkbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <!-- 第二部份：桌上型電腦版 -->
+
+            <div class="collapse navbar-collapse" id="linkbar">
+                <!-- 列出內容 -->
+				<ul class="navbar-nav me-auto">
+					<li class="nav-item" >
+						<a class="nav-link" href="intro.html" style="padding:20px 8px;">有關六腳</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="景點介紹.html" style="padding:20px 8px;">景點介紹</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="美食介紹.html" style="padding:20px 8px;">美食介紹</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="#trip" style="padding:20px 8px;">旅遊攻略</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="周邊景點介紹.html" style="padding:20px 8px;">周邊景點</a>
+					</li>
+					<li class="nav-item" style="width: 200px;text-align: center;">
+                        <a class="nav-link" href="花絮.html" style="padding:20px 8px;">花絮</a>
+                    </li>
+				</ul>
+            </div>                        
+        </div>
+    </nav>
+	
+	
+	<!--行程-->
+	<div class="container-introduction" id="trip">
+		<div style="display: flex;justify-content: center;align-content: center; padding-top: 40px;">
+			<h1 class="container-Attractions" style="font-size: 60px;">Schedule</h1>
+		</div>
+	</div>
+	
+	<br><br><br>
+	<div class="use">
+		<h4 style="font-size: 40px;text-decoration: underline;font-family: 'Klee One', cursive;">使用說明</h4><br><br>
+		<p>Step1：點擊左方欄位<span>"新增地點"</span>即可將地點新增至下方欄位</p><br>
+		<p>Step2：點擊右方欄位<span>"新增時間"</span>即可將時間新增至下方欄位</p><br>
+		<p>Step3：將左方欄位的地點拖移至右方行程表欄位</p>
+		
+	</div><br><br>
+	<div class="row">
+		<div class="col-sm-5" style="border:3px solid rgba(11, 14, 23, 0.816); margin:50px; padding: 10px;font-family: 'Klee One', cursive;">
+			<!--地點選擇-->
+			<div style="text-align: center;">
+				<h2 style="background-color: rgba(23, 29, 45, 0.816);color: white;height: 70px;line-height: 70px;"><b>地點</b><br></h2>
+				<br>
+				<input type="text" id="des" style="margin:5px;" value="" maxlength="10" onkeyup="this.value=this.value.replace(/[, ]/g,'')">
+				<p></p>
+				<div class="group">
+					<div class="cir" id="rouplus" onclick="attcreat()">新增地點</div>
+				</div>
+			</div>
+			<br>
+			<!--地點欄位-->
+			<div class="attr" data-role="drag-drop-container">
+				<div class="cube" id="garlic" draggable="true">
+					<h6 class="box-text">新寶珍餅舖</h6>
+				</div>
+				<div class="cube" id="pizza" draggable="true">
+					<h6 class="box-text">巴度窯</h6>
+				</div>
+				<div class="cube" id="corn" draggable="true">
+					<h6 class="box-text">木精靈豆花</h6>
+				</div>
+				<div class="cube" id="sugar" draggable="true">
+					<h6 class="box-text">蒜頭糖廠</h6>
+				</div>
+				<div class="cube" id="shop" draggable="true">
+					<h6 class="box-text">用九柑仔店</h6>
+				</div>
+				<div id="newatt"></div>
+			</div>
+			<br>
+		</div>
+		
+		<div class="col-sm-5" style="border: 3px solid rgba(11, 14, 23, 0.816); margin:50px; padding: 10px;font-family: 'Klee One', cursive;">
+			<!--時間選擇-->
+			<div style="text-align: center;">
+				<h2 style="background-color: rgba(23, 29, 45, 0.816);color: white;height: 70px;line-height: 70px;"><b>時間</b><br></h2>
+				<br>
+				<select id="hour" style="margin: 10px;"></select>時
+				<select id="minute" style="margin: 10px;"></select>分
+				<p></p>
+				<div class="group">
+					<div class="cir" id="rou" onclick="creat(hour.value,minute.value)">新增時間</div>
+				</div>
+			</div>
+			<br>
+			<!--行程表-->
+			<div style="text-align: center;">
+				<div id="schedule">
+					<div id="Newblock"></div>
+				</div>
+			</div>
+		</div>
+	</div>
+	
+</body>
+
+<script>
+	let dragSources = document.querySelectorAll('[draggable="true"]') //加入drag事件
+	dragSources.forEach(dragSource => {
+		dragSource.addEventListener('dragstart', dragStart)
+	})
+	
+	function dragStart (e) { //傳送資料
+		e.dataTransfer.setData('text/plain', e.target.id)
+	}
+	
+	let dropTargets = document.querySelectorAll('[data-role="drag-drop-container"]') //target加入事件
+	dropTargets.forEach(dropTarget => {
+		dropTarget.addEventListener('drop', dropped)
+		dropTarget.addEventListener('dragenter', cancelDefault)
+		dropTarget.addEventListener('dragover', cancelDefault)
+	})
+	
+	function dropped (e) { //掉落資料接收
+		cancelDefault(e)
+		let id = e.dataTransfer.getData('text/plain')
+		e.target.append(document.querySelector('#' + id))
+	}
+	
+	function cancelDefault (e) {
+		e.preventDefault()
+		e.stopPropagation()
+		return false
+	}
+	
+	var index=1;
+	var i="ba";
+	function attcreat(){ //新增行程地點
+		var el = document.getElementById("newatt");
+		var newDiv = document.createElement("div");
+		var d=document.getElementById("des");
+		
+		
+		if(d.value==""){
+			window.alert("不可空白！");
+		}else if(index<6){
+			console.log("att success");
+			console.log(d.value);
+			newDiv.setAttribute("class","cube");
+			newDiv.setAttribute("id",i);
+			newDiv.setAttribute("draggable","true");
+			newDiv.innerHTML='<h6 class="box-text">'+d.value+'</h6>'
+			el.append(newDiv);
+			
+			index++;
+			let dragSources = document.querySelectorAll('[draggable="true"]')
+			dragSources.forEach(dragSource => {
+				dragSource.addEventListener('dragstart', dragStart)
+			})
+			
+			i=i+i;
+			d.value = "";
+		}else{
+			d.value = "";
+			window.alert("已達上限！");
+		}
+	}
+	
+	var list="<br>";
+	var num=1;
+	function creat(ho,mi){ //新增時間表
+		if(num<11){
+			console.log("success");
+			var el = document.getElementById("Newblock");
+			var nDiv = document.createElement("div");
+			
+			nDiv.setAttribute("class","group");
+			nDiv.innerHTML='<div class="time"><h6 class="box-text">'+ho+':'+mi+'</h6></div><div class="spot" data-role="drag-drop-container"></div>'
+			el.append(nDiv);
+			
+			var b = document.createElement("br");
+			el.append(b);
+			
+			num++;
+			let dropTargets = document.querySelectorAll('[data-role="drag-drop-container"]')
+			dropTargets.forEach(dropTarget => {
+				dropTarget.addEventListener('drop', dropped)
+				dropTarget.addEventListener('dragenter', cancelDefault)
+				dropTarget.addEventListener('dragover', cancelDefault)
+			})
+			
+		}else{
+			window.alert("已達上限！");
+		}
+	}
+	
+	function time(){ //時間選項
+		var i;
+		var hour="";
+		for(i=0;i<24;i++){
+			if(i<10){
+				hour=hour+"<option value=0"+i + ">0" + i + "</option><br>";
+			}else{
+				hour=hour+"<option value="+i + ">" + i + "</option><br>";
+			}
+		}
+		document.getElementById("hour").innerHTML=hour;
+		
+		var j;
+		var minute="";
+		for(j=0;j<60;j++){
+			if (j<10){
+				minute=minute+"<option value=0"+j + ">0" + j + "</option><br>";
+			}else{
+				minute=minute+"<option value="+j + ">" + j + "</option><br>";
+			}
+		}
+		document.getElementById("minute").innerHTML=minute;
+	}
+</script>
+
+</html>

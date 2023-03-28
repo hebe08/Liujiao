@@ -1,0 +1,9 @@
+window.onload=function(){
+    if(document.body.scrollTop>0){
+        console.log(1);
+        window.scrollTo(0,-1);
+        document.body.scrollTop=0;
+    }
+    window.scrollTo(0,-1);
+    document.body.scrollTop=0;
+}

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RECIPE>
+  <FINGRE name="fir">
+    <SINGRE name="sec">fou</SINGRE>
+  </FINGRE>
+  <FINGRE name="sec">
+    <SINGRE name="fir">fou</SINGRE>
+  </FINGRE>
+  <FINGRE name="thi">
+    <SINGRE name="fir">six</SINGRE>
+  </FINGRE>
+  <FINGRE name="fir">
+    <SINGRE name="thi">six</SINGRE>
+  </FINGRE>
+</RECIPE>
